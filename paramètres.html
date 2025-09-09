@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paramètres - Dashboard Analytics</title>
+  <link rel="stylesheet" href="css/paramètres.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Data<span>Dash</span></div>
+      <ul>
+        <li><a href="index.html"><i class="fa fa-chart-line"></i> Tableau de bord</a></li>
+        <li><a href="sensibilisation.html"><i class="fa fa-bullhorn"></i> Sensibilisation</a></li>
+        <li><a href="pipeline.html"><i class="fa fa-stream"></i> Pipeline</a></li>
+        <li><a href="engagement.html"><i class="fa fa-user-friends"></i> Engagement</a></li>
+        <li class="active"><a href="paramètres.html"><i class="fa fa-cog"></i> Paramètres</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <h2><i class="fa fa-cog"></i> Paramètres</h2>
+      </header>
+
+      <section class="settings-section">
+        <!-- Gestion de compte -->
+        <div class="settings-card" id="account-card">
+          <h3><i class="fa fa-user"></i> Gestion de compte</h3>
+          <form id="account-form">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Nouveau mot de passe</label>
+            <input type="password" id="password" name="password" autocomplete="new-password">
+
+            <button type="submit" class="filter-btn"><i class="fa fa-save"></i> Sauvegarder</button>
+          </form>
+        </div>
+
+        <!-- Préférences d'affichage -->
+        <div class="settings-card" id="display-card">
+          <h3><i class="fa fa-palette"></i> Préférences d'affichage</h3>
+          <form id="display-form">
+            <label for="theme">Thème</label>
+            <select id="theme" name="theme">
+              <option value="clair">Clair</option>
+              <option value="sombre">Sombre</option>
+            </select>
+
+            <label for="lang">Langue</label>
+            <select id="lang" name="lang">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+
+            <label>
+              <input type="checkbox" id="notif">
+              Activer les notifications
+            </label>
+
+            <button type="submit" class="filter-btn"><i class="fa fa-save"></i> Sauvegarder</button>
+          </form>
+        </div>
+
+        <!-- Filtres et données -->
+        <div class="settings-card" id="filters-card">
+          <h3><i class="fa fa-filter"></i> Filtres et données</h3>
+          <form id="filters-form">
+            <label for="period">Période d'analyse</label>
+            <select id="period" name="period">
+              <option value="jour">Jour</option>
+              <option value="semaine">Semaine</option>
+              <option value="mois">Mois</option>
+              <option value="année">Année</option>
+            </select>
+
+            <label>
+              <input type="checkbox" id="lineChart">
+              Activer le graphique linéaire
+            </label>
+            <label>
+              <input type="checkbox" id="barChart">
+              Activer le graphique en barres
+            </label>
+            <label>
+              <input type="checkbox" id="pieChart">
+              Activer le graphique en secteurs
+            </label>
+
+            <button type="button" class="filter-btn" id="reset-filters"><i class="fa fa-undo"></i> Réinitialiser</button>
+            <button type="submit" class="filter-btn"><i class="fa fa-save"></i> Sauvegarder</button>
+          </form>
+        </div>
+
+        <!-- Sécurité et confidentialité -->
+        <div class="settings-card" id="security-card">
+          <h3><i class="fa fa-shield-alt"></i> Sécurité & confidentialité</h3>
+          <form id="security-form">
+            <label>
+              <input type="checkbox" id="twofa">
+              Authentification à deux facteurs
+            </label>
+            <button type="submit" class="filter-btn"><i class="fa fa-save"></i> Sauvegarder</button>
+            <button type="button" class="filter-btn" id="delete-account" style="background:#bbb;color:#222;"><i class="fa fa-trash"></i> Supprimer le compte</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/paramètres.js"></script>
+</body>
+</html>

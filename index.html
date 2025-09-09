@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tableau de bord Web Analytics</title>
-  <link rel="stylesheet" href="/Dashboard Analytics/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -13,23 +13,23 @@
     
     <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="logo">Marketing<span>360</span></div>
+      <div class="logo">Data<span>Dash</span></div>
       <ul>
         <li class="active"><a href="index.html"><i class="fa fa-chart-line"></i> Tableau de bord</a></li>
-        <li><a href="/Dashboard Analytics/sensibilisation.html"><i class="fa fa-bullhorn"></i> Sensibilisation</a></li>
-        <li><a href="/Dashboard Analytics/pipeline.html"><i class="fa fa-stream"></i> Pipeline</a></li>
-        <li><a href="/Dashboard Analytics/engagement.html"><i class="fa fa-user-friends"></i> Engagement</a></li>
+        <li><a href="sensibilisation.html"><i class="fa fa-bullhorn"></i> Sensibilisation</a></li>
+        <li><a href="pipeline.html"><i class="fa fa-stream"></i> Pipeline</a></li>
+        <li><a href="engagement.html"><i class="fa fa-user-friends"></i> Engagement</a></li>
+        <li><a href="parametres.html"><i class="fa fa-cog"></i> Paramètres</a></li>
       </ul>
     </aside>
-
 
     <!-- Contenu principal -->
     <main class="main-content">
       <header class="topbar">
         <h2>Web Analytics</h2>
         <div class="filters">
-          <span>Sélections actuelles ▼</span>
-          <span>Filtres ⚙️</span>
+          <button class="filter-btn"><i class="fa fa-filter"></i> Filtres</button>
+          <button class="filter-btn"><i class="fa fa-sliders-h"></i> Sélections</button>
         </div>
       </header>
 
@@ -67,6 +67,6 @@
     </main>
   </div>
 
-  <script src="/Dashboard Analytics/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
