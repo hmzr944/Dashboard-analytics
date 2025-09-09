@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pipeline - Tableau de bord</title>
+  <link rel="stylesheet" href="/Dashboard Analytics/css/pipeline.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Marketing<span>360</span></div>
+      <ul>
+        <li><a href="/Dashboard Analytics/index.html"><i class="fa fa-chart-line"></i> Tableau de bord</a></li>
+        <li><a href="/Dashboard Analytics/sensibilisation.html"><i class="fa fa-bullhorn"></i> Sensibilisation</a></li>
+        <li class="active"><a href="pipeline.html"><i class="fa fa-stream"></i> Pipeline</a></li>
+        <li><a href="/Dashboard Analytics/engagement.html"><i class="fa fa-user-friends"></i> Engagement</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+      
+      <!-- Topbar -->
+      <header class="topbar">
+        <h2>Pipeline - Suivi des leads</h2>
+        <div class="filters">
+          <span>Sélections ▼</span>
+          <span>Filtres ⚙️</span>
+        </div>
+      </header>
+
+      <!-- KPIs -->
+      <section class="kpis">
+        <div class="kpi-card">
+          <h3>Leads générés</h3>
+          <p class="value">500</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Leads qualifiés</h3>
+          <p class="value">300</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Opportunités</h3>
+          <p class="value">120</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Taux de conversion</h3>
+          <p class="value">10%</p>
+        </div>
+      </section>
+
+      <!-- Graphiques -->
+      <section class="charts">
+        <div class="chart-card">
+          <h3>Entonnoir de conversion</h3>
+          <canvas id="funnelChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Évolution des leads</h3>
+          <canvas id="leadsChart"></canvas>
+        </div>
+      </section>
+
+      <!-- Tableau des leads -->
+      <div class="table-container">
+        <h3>Liste des leads</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Email</th>
+              <th>Statut</th>
+              <th>Valeur (€)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jean Dupont</td>
+              <td>jean.dupont@email.com</td>
+              <td>Prospect</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Sophie Martin</td>
+              <td>sophie.martin@email.com</td>
+              <td>Qualifié</td>
+              <td>1 200</td>
+            </tr>
+            <tr>
+              <td>Marc Durand</td>
+              <td>marc.durand@email.com</td>
+              <td>Opportunité</td>
+              <td>2 000</td>
+            </tr>
+            <tr>
+              <td>Claire Leroy</td>
+              <td>claire.leroy@email.com</td>
+              <td>Client</td>
+              <td>3 500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="/Dashboard Analytics/js/pipeline.js"></script>
+</body>
+</html>

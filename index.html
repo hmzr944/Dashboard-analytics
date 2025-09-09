@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord Web Analytics</title>
+  <link rel="stylesheet" href="/Dashboard Analytics/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Marketing<span>360</span></div>
+      <ul>
+        <li class="active"><a href="index.html"><i class="fa fa-chart-line"></i> Tableau de bord</a></li>
+        <li><a href="/Dashboard Analytics/sensibilisation.html"><i class="fa fa-bullhorn"></i> Sensibilisation</a></li>
+        <li><a href="/Dashboard Analytics/pipeline.html"><i class="fa fa-stream"></i> Pipeline</a></li>
+        <li><a href="/Dashboard Analytics/engagement.html"><i class="fa fa-user-friends"></i> Engagement</a></li>
+      </ul>
+    </aside>
+
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+      <header class="topbar">
+        <h2>Web Analytics</h2>
+        <div class="filters">
+          <span>Sélections actuelles ▼</span>
+          <span>Filtres ⚙️</span>
+        </div>
+      </header>
+
+      <!-- KPIs -->
+      <section class="kpis">
+        <div class="kpi-card">
+          <h3>Visites Totales</h3>
+          <p class="value">11,871,522</p>
+        </div>
+        <div class="kpi-card">
+          <h3>% Nouvelles visites</h3>
+          <p class="value">47%</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Taux de rebond moyen</h3>
+          <p class="value">51%</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Temps moyen sur la page</h3>
+          <p class="value">177 sec</p>
+        </div>
+      </section>
+
+      <!-- Graphiques -->
+      <section class="charts">
+        <div class="chart-card">
+          <h3>Visites</h3>
+          <canvas id="lineChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Visites par Région</h3>
+          <canvas id="barChart"></canvas>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/Dashboard Analytics/js/script.js"></script>
+</body>
+</html>

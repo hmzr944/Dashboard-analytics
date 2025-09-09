@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awareness - Tableau de bord</title>
+  <link rel="stylesheet" href="/Dashboard%20Analytics/css/sensibilisation.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Marketing<span>360</span></div>
+      <ul>
+        <li><a href="/Dashboard Analytics/index.html">Tableau de bord</a></li>
+        <li class="active"><a href="sensibilisation.html">Sensibilisation</a></li>
+        <li><a href="/Dashboard Analytics/pipeline.html">Pipeline</a></li>
+        <li><a href="/Dashboard Analytics/engagement.html">Engagement</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+      <header class="topbar">
+        <h2>Sensibilisation</h2>
+        <div class="filters">
+          <span>Filtres ▼</span>
+        </div>
+      </header>
+
+      <!-- KPIs -->
+      <section class="kpis">
+        <div class="kpi-card">
+          <h3>Impressions</h3>
+          <p class="value">1 250 000</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Clics</h3>
+          <p class="value">78 000</p>
+        </div>
+        <div class="kpi-card">
+          <h3>CPC moyen</h3>
+          <p class="value">0,35 €</p>
+        </div>
+        <div class="kpi-card">
+          <h3>CTR</h3>
+          <p class="value">6,2 %</p>
+        </div>
+      </section>
+
+      <!-- Graphiques -->
+      <section class="charts">
+        <div class="chart-card">
+          <h3>Tendance des clics</h3>
+          <canvas id="clickChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Sources de trafic</h3>
+          <canvas id="trafficChart"></canvas>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/Dashboard Analytics/js/sensibilisation.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engagement - Tableau de bord</title>
+  <link rel="stylesheet" href="/Dashboard Analytics/css/engagement.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Marketing<span>360</span></div>
+      <ul>
+        <li><a href="/Dashboard Analytics/index.html"><i class="fa fa-chart-line"></i> Tableau de bord</a></li>
+        <li><a href="/Dashboard Analytics/sensibilisation.html"><i class="fa fa-bullhorn"></i> Sensibilisation</a></li>
+        <li><a href="/Dashboard Analytics/pipeline.html"><i class="fa fa-stream"></i> Pipeline</a></li>
+        <li class="active"><a href="engagement.html"><i class="fa fa-user-friends"></i> Engagement</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+      
+      <!-- Topbar -->
+      <header class="topbar">
+        <h2>Engagement</h2>
+        <div class="filters">
+          <span>Sélections ▼</span>
+          <span>Filtres ⚙️</span>
+        </div>
+      </header>
+
+      <!-- KPIs -->
+      <section class="kpis">
+        <div class="kpi-card">
+          <h3>Likes</h3>
+          <p class="value">3 200</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Commentaires</h3>
+          <p class="value">1 450</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Partages</h3>
+          <p class="value">890</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Emails ouverts</h3>
+          <p class="value">5 000</p>
+        </div>
+      </section>
+
+      <!-- Graphiques -->
+      <section class="charts">
+        <div class="chart-card">
+          <h3>Engagement par plateforme</h3>
+          <canvas id="platformChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Taux d'engagement (%)</h3>
+          <canvas id="engagementChart"></canvas>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="/Dashboard Analytics/js/engagement.js"></script>
+</body>
+</html>
